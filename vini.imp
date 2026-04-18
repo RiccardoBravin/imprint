@@ -1,0 +1,199 @@
+version: 1
+
+settings:
+  a4:
+    title_font_size: 32.00
+    primary_color: "#000000"
+    sections_per_page: 2
+    show_footer: false
+    show_fee: false
+  a5:
+    title_font_size: 28.00
+    primary_color: "#000000"
+    sections_per_page: 1
+    show_footer: false
+    show_fee: false
+
+sections:
+  - type: wine_list
+    name: "Bollicine"
+    layout: flow
+    items:
+      - name: "Prosecco superiore Brut \"Col Funer\""
+        price: 22.00
+      - name: "Extra brut Sboccatura 2024 Franciacorta \"Faccoli\""
+        price: 50.00
+      - name: "Nature Vendemmia 2022 Trento Doc \"Tonini\""
+        price: 50.00
+      - name: "Extra brut 2021 Alta Langa \"Ettore Germano\""
+        price: 50.00
+      - name: "Dosage Zero Rosè \"Erpagrife\""
+        price: 45.00
+      - name: "Franciacorta Animante Dosage Zero \"Barone Pizzini\""
+        price: 45.00
+      - name: "Extra Brut Oltrepo Pavese \"La Genesia\""
+        price: 30.00
+      - name: "Ribolla gialla Brut \"Canus\""
+        price: 35.00
+      - name: "Crèmant de Loire 2023 \"Chateau Pierre-Bise\""
+        price: 40.00
+      - name: "Champagne Blanc de Noirs \"Larnaudie-Hirault\""
+        price: 85.00
+      - name: "Champagne Le Rèserve Extra brut \"Billecart-Salmon\""
+        price: 80.00
+
+  - type: wine_list
+    name: "Vini Bianchi Friulani"
+    layout: flow
+    items:
+      - name: "Friulano 2024 \"Volpe Pasini\""
+        price: 30.00
+      - name: "Friulano Zabura 2024 \"Skok\""
+        price: 30.00
+      - name: "Friulano 2024 \"Schioppetto\""
+        price: 32.00
+      - name: "Athena Friulano 2020 \"Picech\""
+        price: 50.00
+      - name: "Friulano 2024 \"Komjanc\""
+        price: 30.00
+      - name: "Pe-Ar 2022 Collio \"Skok\""
+        price: 35.00
+      - name: "Malvasia 2022 \"Picech\""
+        price: 38.00
+      - name: "Malvasia Chioma Integrale 2023 \"Vignai da Duline\""
+        price: 45.00
+      - name: "Pinot Grigio 2024 \"Skok\""
+        price: 28.00
+      - name: "Ribolla gialla 2024 \"Komjanc\""
+        price: 28.00
+      - name: "Ribolla gialla 2024 \"Volpe Pasini\""
+        price: 30.00
+      - name: "Sauvignon 2024 \"Visintini\""
+        price: 25.00
+      - name: "Sauvignon 2024 \"Komjanc\""
+        price: 28.00
+      - name: "Sauvignon 2024 \"Skok\""
+        price: 30.00
+      - name: "Sauvignon 2023 \"Simon di Brazzan\""
+        price: 32.00
+      - name: "Sauvignon 2023 \"Il Carpino\""
+        price: 32.00
+      - name: "Friulano 2023 \"Canus\""
+        price: 35.00
+      - name: "Pinot Grigio 2023 \"Canus\""
+        price: 35.00
+      - name: "Friulano 2024 Mitja \"Sirk\""
+        price: 35.00
+      - name: "Sauvignon 2022 \"Il Carpino\""
+        price: 32.00
+
+  - type: wine_list
+    name: "Vini Rossi Friulani"
+    layout: flow
+    items:
+      - name: "Cabernet Franc 2022 \"Simon di Brazzan\""
+        price: 32.00
+      - name: "Cabernet 2024 \"Volpe Pasini\""
+        price: 30.00
+      - name: "Cabernet Sauvignon 2023 \"Komjanc\""
+        price: 28.00
+      - name: "Cabernet Sauvignon 2020 \"Il Carpino\""
+        price: 50.00
+      - name: "Merlot 2021 \"Visintini\""
+        price: 25.00
+      - name: "Merlot 2022 \"Komjanc\""
+        price: 28.00
+      - name: "Merlot 2021 \"Simon di Brazzan\""
+        price: 32.00
+      - name: "Merlot 2021 \"Schioppetto\""
+        price: 32.00
+      - name: "Merlot 2019 \"Il Carpino\""
+        price: 35.00
+      - name: "Refosco 2023 \"Canus\""
+        price: 35.00
+      - name: "Schioppettino 2020 \"Ronco Scagnet\""
+        price: 28.00
+      - name: "Cabernet 2020 \"Visintini\""
+        price: 25.00
+      - name: "Refosco 2024 \"Volpe Pasini\""
+        price: 30.00
+      - name: "Merlot Togliano 2021 \"Volpe Pasini\""
+        price: 30.00
+      - name: "Cabernet Sauvignon 2016 \"Il Carpino\""
+        price: 50.00
+
+  - type: wine_list
+    name: "Vini Rossi Piemontesi"
+    layout: flow
+    items:
+      - name: "Dolcetto Villot 2023 \"Ca' Viola\""
+        price: 30.00
+      - name: "Barbera Brichet 2023 \"Ca' Viola\""
+        price: 35.00
+      - name: "Barbaresco \"Rocca\""
+        price: 70.00
+      - name: "Barbera La Mattacchiona \"Accornero\""
+        price: 26.00
+      - name: "Barbera Five \"Rattalino\""
+        price: 30.00
+      - name: "Dolcetto Pianezzo Dogliani \"Boschis\""
+        price: 30.00
+      - name: "Ruchè Viarì 2023 \"Accornero\""
+        price: 38.00
+      - name: "Nebbiolo Rangone 2023 \"Ca' Viola\""
+        price: 40.00
+      - name: "Pelaverga 2023 Basadone \"Castello di Verduno\""
+        price: 38.00
+
+  - type: wine_list
+    name: "Vini Rossi Trentini"
+    layout: flow
+    items:
+      - name: "Lagrein 2023 \"Simoncelli\""
+        price: 28.00
+      - name: "Lagrein \"Muri Gries\""
+        price: 35.00
+      - name: "Marzemino 2023 \"Salizzoni\""
+        price: 28.00
+      - name: "Pinot Nero \"Colterenzio\""
+        price: 30.00
+      - name: "Pinot Nero \"Tramin\""
+        price: 32.00
+      - name: "Pinot Nero \"Falkenstein\""
+        price: 45.00
+      - name: "Merlot 2023 \"Colterenzio\""
+        price: 0.00
+      - name: "Merlot 2023 \"Lì Ua\""
+        price: 0.00
+
+  - type: wine_list
+    name: "Vini Rossi"
+    layout: flow
+    items:
+      - name: "Cannonau di Sardegna 2022 \"Saraja\""
+        price: 28.00
+      - name: "Valpolicella Ripasso 2020 \"Zanoni\""
+        price: 36.00
+      - name: "Malanotte 2017 \"Le Rive\""
+        price: 50.00
+      - name: "Merlot 2024 \"Le Rive\""
+        price: 20.00
+      - name: "Chianti 2023 Biskero \"Salcheto\""
+        price: 25.00
+      - name: "Chianti Classico Brolio Bettino 2019 \"Ricasoli\""
+        price: 38.00
+      - name: "Morellino di Scansano 2023 \"Cantina Produttori di Scansano\""
+        price: 25.00
+      - name: "Ciliegiolo 2023 \"Cantina Produttori di Scansano\""
+        price: 20.00
+      - name: "Rosso di Montepulciano 2024 \"Salcheto\""
+        price: 28.00
+
+  - type: wine_list
+    name: "Vini Bianchi"
+    layout: flow
+    items:
+      - name: "Lugana 2024 Capotesta \"Cascina Maddalena\""
+        price: 32.00
+      - name: "Pinot Grigio 2023 \"L'Ua\""
+        price: 28.00

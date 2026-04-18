@@ -1,0 +1,67 @@
+{
+  "name": "Flutter",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "remoteUser": "ubuntu",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "notebook.formatOnSave.enabled": true,
+        "notebook.codeActionsOnSave": {
+          "notebook.source.fixAll": "explicit",
+          "notebook.source.organizeImports": "explicit"
+        },
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "terminal.integrated.profiles.linux": {
+          "zsh": {
+            "path": "/bin/zsh"
+          }
+        },
+        "dart.flutterSdkPath": "/sdks/flutter",
+        "editor.formatOnSave": true
+      },
+      "extensions": [
+        "ms-azuretools.vscode-containers",
+        "aaron-bond.better-comments",
+        "exiasr.hadolint",
+        "hashicorp.hcl",
+        "mhutchie.git-graph",
+        "oderwat.indent-rainbow",
+        "pflannery.vscode-versionlens",
+        "redhat.vscode-yaml",
+        "samueltscott.maximizeterminal",
+        "shardulm94.trailing-spaces",
+        "tamasfe.even-better-toml",
+        "yzhang.markdown-all-in-one",
+        "DavidAnson.vscode-markdownlint",
+        "EditorConfig.EditorConfig",
+        "Gruntfuggly.todo-tree",
+        "circlecodesolution.ccs-flutter-color",
+        "dart-code.flutter",
+        "dart-code.dart-code",
+        "Flutterando.flutter-coverage",
+        "Nash.awesome-flutter-snippets",
+        "marcelovelasquez.flutter-tree",
+        "kisstkondoros.vscode-gutter-preview",
+        "Anthropic.claude-code"
+      ]
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {},
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
+    "ghcr.io/dhoeric/features/hadolint:1": {}
+  },
+  "mounts": [
+    {
+      "source": "${localEnv:HOME}/.ssh",
+      "target": "/home/ubuntu/.ssh",
+      "type": "bind"
+    }
+  ],
+  "runArgs": [
+    "--network=host"
+  ],
+  "postCreateCommand": "./.devcontainer/setup-dev-environment.sh"
+}

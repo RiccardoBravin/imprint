@@ -1,0 +1,7 @@
+---
+extends: default
+ignore:
+  - .copier-answers.yml
+rules:
+  line-length:
+    max: 200

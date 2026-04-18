@@ -1,0 +1,179 @@
+version: 1
+fee: 3.00
+footer_note: "Prezzi IVA inclusa. Si prega di informare il personale di eventuali allergie o intolleranze alimentari."
+
+settings:
+  active_format: a5
+  enable_a4: true
+  enable_a5: true
+  enable_s3_upload: true
+  price_symbol: "€"
+  a4:
+    title_font_size: 40.00
+    primary_color: "#B71C1C"
+    sections_per_page: 3
+    show_footer: true
+    show_fee: true
+    item_font_size: 14.00
+    item_color: "#000000"
+    desc_font_size: 10.00
+    desc_color: "#555555"
+    footer_font_size: 12.00
+    footer_color: "#444444"
+    logo_size: 90.00
+    background_color: "#FFFFFF"
+  a5:
+    title_font_size: 32.00
+    primary_color: "#0D47A1"
+    sections_per_page: 2
+    show_footer: false
+    show_fee: true
+    item_font_size: 13.00
+    item_color: "#000000"
+    desc_font_size: 8.5
+    desc_color: "#555555"
+    footer_font_size: 9.00
+    footer_color: "#444444"
+    logo_size: 75.00
+    background_color: "#FFFFFF"
+
+sections:
+  - type: cover
+    layout: full_page
+    venue_name: "Ristorante Al Fogolâr"
+    tagline: "Cucina friulana dal 1987"
+  - type: special_selection
+    name: "Proposta del giorno"
+    layout: full_page
+    shared_price: 55.00
+    note: "Non si fanno variazioni sulle \nproposte e vengono servite per l'intero tavolo."
+    items:
+      - name: "Lonzino e radicchio marinato"
+        price: 0.00
+        allergens: [1, 3]
+      - name: "Tagliatelle al ragù di faraona e castagne"
+        price: 0.00
+        allergens: [1, 3, 6]
+      - name: "Guancialetto di vitello brasato e tortino di patate"
+        price: 0.00
+        allergens: [3, 9, 10]
+      - name: "Crostata alle pere e cioccolato"
+        price: 0.00
+        allergens: [1, 3]
+  - type: regular
+    name: "Antipasti"
+    layout: inline
+    items:
+      - name: "Speck di Ragogna \"Molinaro\" con gnocchi di pane fritto"
+        description: "Stagionato 18 mesi"
+        price: 14.00
+        allergens: [1, 3]
+      - name: "Flan agli spinaci, speck croccante e fonduta di montasio"
+        price: 14.00
+        allergens: [3, 4, 6]
+      - name: "Tartare di fassona piemontese, tuorlo marinato e capperi"
+        description: "Carne cruda — da consumarsi previa comunicazione"
+        price: 16.00
+        allergens: [3]
+      - name: "Zuppa di fagioli borlotti e orzo"
+        price: 11.00
+        allergens: [1]
+  - type: regular
+    name: "Primi Piatti"
+    layout: inline
+    items:
+      - name: "Risotto al radicchio di Treviso e arancia"
+        price: 17.00
+        allergens: [6]
+      - name: "Gnocchi di spinaci e pane su vellutata di ricotta affumicata"
+        price: 16.00
+        allergens: [1, 3, 6]
+      - name: "Tajarin al burro e tartufo nero estivo"
+        price: 22.00
+        allergens: [1, 3, 6]
+      - name: "Minestrone di verdure dell'orto"
+        price: 12.00
+        allergens: []
+  - type: regular
+    name: "Secondi Piatti"
+    layout: inline
+    items:
+      - name: "Frico croccante con polenta e formaggio Montasio"
+        description: "Piatto tipico friulano"
+        price: 18.00
+        allergens: [1, 6]
+      - name: "Agnello arrosto con erbe aromatiche e patate novelle"
+        price: 24.00
+        allergens: [9]
+      - name: "Branzino al sale con verdure di stagione"
+        price: 26.00
+        allergens: [4]
+      - name: "Tagliata di manzo con rucola e Parmigiano Reggiano"
+        price: 28.00
+        allergens: [6]
+  - type: regular
+    name: "Dolci"
+    layout: flow
+    items:
+      - name: "Gubana della nonna con grappa di Picolit"
+        description: "Dolce tradizionale friulano"
+        price: 9.00
+        allergens: [1, 3, 9, 13]
+      - name: "Semifreddo al miele di acacia e noci"
+        price: 8.00
+        allergens: [3, 6, 9]
+      - name: "Crostata di more selvatiche"
+        price: 8.00
+        allergens: [1, 3]
+      - name: "Selezione di formaggi locali con confettura di fichi"
+        description: "Montasio, Latteria, Asìno — circa 180g"
+        price: 14.00
+        allergens: [6]
+  - type: wine_list
+    name: "Vini al calice"
+    layout: inline
+    items:
+      - name: "Prosecco Superiore Brut \"Col Funer\" — Conegliano Valdobbiadene"
+        price: 6.00
+      - name: "Sauvignon \"Ronco delle Mele\" — Vie di Romans"
+        price: 9.00
+      - name: "Friulano \"Vieris\" — Livon"
+        price: 7.00
+      - name: "Refosco dal Peduncolo Rosso — Dorigo"
+        price: 7.5
+      - name: "Ribolla Gialla orange — Damijan Podversic"
+        price: 10.00
+  - type: wine_list
+    name: "Carta dei Vini"
+    layout: flow
+    items:
+      - name: "Collio Bianco \"Bric Blanc\" — Russiz Superiore"
+        price: 38.00
+      - name: "Friulano \"Vintage Tunina\" — Jermann"
+        price: 65.00
+      - name: "Tocai Friulano Riserva — Castello di Spessa"
+        price: 45.00
+      - name: "Merlot \"Voos dai Cjamps\" — Livon"
+        price: 42.00
+      - name: "Schioppettino di Prepotto — Ronchi di Cialla"
+        price: 55.00
+      - name: "Picolit DOCG — Dorigo"
+        price: 90.00
+  - type: event_program
+    name: "Serata di degustazione"
+    hidden: true
+    layout: full_page
+    items:
+      - name: "Aperitivo di benvenuto con Prosecco e stuzzichini"
+        time: "19:00"
+      - name: "Antipasto misto della casa"
+        time: "19:45"
+        price: 0.00
+      - name: "Degustazione vini bianchi friulani (5 etichette)"
+        time: "20:30"
+        price: 35.00
+      - name: "Cena a buffet con specialità friulane"
+        time: "21:30"
+        price: 55.00
+      - name: "Dessert e grappa di commiato"
+        time: "23:00"
